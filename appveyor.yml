@@ -63,7 +63,7 @@ build:
   verbosity: detailed              # quiet|minimal|normal|detailed
   
 after_build:
-- 7z a -mx9 VKLoader_%BUILD_VERSION%_%PLATFORM%.7z .\build\
+  - 7z a -mx9 VKLoader_%BUILD_VERSION%_%PLATFORM%.7z .\build\
   
 artifacts:
   - path: VKLoader_%BUILD_VERSION%_%PLATFORM%.7z
