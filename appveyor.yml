@@ -24,7 +24,7 @@ environment:
   CMAKE_URL: "http://cmake.org/files/v3.10/cmake-3.10.2-win64-x64.zip"
   
 configuration:
- - RelStatic
+    - Release  
 
 branches:
   only:
