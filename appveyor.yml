@@ -59,8 +59,7 @@ before_build:
 
 build:
   parallel: true                   # enable MSBuild parallel builds
-  project: build/Vulkan-Loader.sln # path to Visual Studio solution or project
-  verbosity: detailed              # quiet|minimal|normal|detailed
+ # project: build/Vulkan-Loader.sln # path to Visual Studio solution or project
   
 after_build:
   - 7z a -mx9 VKLoader_%BUILD_VERSION%_%PLATFORM%.7z .\build\
