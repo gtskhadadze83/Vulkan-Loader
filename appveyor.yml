@@ -13,9 +13,6 @@ max_jobs: 4
 
 environment:
   matrix:
-    - PLATFORM: Win32
-      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-
     - PLATFORM: x64
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
  
@@ -28,7 +25,7 @@ configuration:
 
 branches:
   only:
-    - master
+    - sdk-1.2.135
 
 install:
   - appveyor DownloadFile %CMAKE_URL% -FileName cmake.zip
