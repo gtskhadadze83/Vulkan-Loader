@@ -22,7 +22,6 @@ environment:
   PYTHON_PATH: "C:/Python35"
   PYTHON_PACKAGE_PATH: "C:/Python35/Scripts"
   CMAKE_URL: "http://cmake.org/files/v3.10/cmake-3.10.2-win64-x64.zip"
-  VULKAN_HEADERS_INSTALL_DIR: "C:\projects\vulkan-loader\external\Vulkan-Headers\build\install"
   
 configuration:
  - RelStatic
@@ -39,6 +38,7 @@ install:
 
 before_build:
   - "SET PATH=C:\\Python35;C:\\Python35\\Scripts;%PATH%"
+  - "SET VULKAN_HEADERS_INSTALL_DIR=C:\\projects\\vulkan-loader\\external\\Vulkan-Headers\\build\\install"
   - echo.
   - echo Starting build for %APPVEYOR_REPO_NAME%
   # Install dependencies
