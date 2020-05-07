@@ -55,7 +55,7 @@ before_build:
   - echo Generating CMake files for %PLATFORM%
   - mkdir build
   - cd build
-  - cmake -A x64 -DVULKAN_HEADERS_INSTALL_DIR=C:\projects\vulkan-loader\external\Vulkan-Headers\build\install ..
+  - cmake -A x64 -D%VULKAN_HEADERS_INSTALL_DIR% ..
   - cmake --build .
   - echo Building platform=%PLATFORM% configuration=%CONFIGURATION%
 
