@@ -62,9 +62,7 @@ build:
   parallel: true                   # enable MSBuild parallel builds
   project:  build/Vulkan-Loader.sln # path to Visual Studio solution or project
   
-after_build:
-- 7z a -mx9 VKLoader_07052020_%PLATFORM%.7z C:/projects/vulkan-loader/build/*
-  
 artifacts:
-  - path: VKLoader_07052020_%PLATFORM%.7z
-    name: VKLoader_07052020_%PLATFORM%  
+  - path: build
+    name: VKLoader_07052020_%PLATFORM%
+    type: zip 
