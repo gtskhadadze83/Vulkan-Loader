@@ -61,5 +61,5 @@ build:
   
 artifacts:
   - path: build
-    name: VKLoader_07052020_%PLATFORM%
+    name: VKLoader_250520_%PLATFORM%
     type: zip 
